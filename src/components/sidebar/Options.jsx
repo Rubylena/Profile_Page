@@ -8,8 +8,10 @@ const Options = ({icon, alt, text}) => {
       <div className='option_bg'>
         <img src={icon} alt={alt} className='option_img'></img>
       </div>
-      <p>{text}</p>
-      <p>&#8250;</p>
+      <div className='option_text'>
+        <p>{text}</p>
+        <p>&#8250;</p>
+      </div>
     </div>
   )
 }

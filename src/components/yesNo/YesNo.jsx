@@ -1,8 +1,8 @@
 import React from 'react'
 import './yesNo.css'
-const YesNo = ({text}) => {
+const YesNo = ({text, action, name}) => {
   return (
-    <p className='YesNo'>
+    <p className={`${name} YesNo`} onClick={action}>
         {text}
     </p>
   )

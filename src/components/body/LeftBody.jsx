@@ -1,5 +1,5 @@
 import React from 'react'
-import photo from '../../assets/img/photo.jpg'
+import photo from '../../assets/img/photo-min.jpg'
 import upload from '../../assets/img/upload.svg'
 import user from '../../assets/img/user.svg'
 import course from '../../assets/img/course.svg'
@@ -21,7 +21,7 @@ const LeftBody = () => {
             </div>
             <h2>Grace Effiong</h2>
 
-            <article>
+            <article  className='hero_left_article'>
                 <Options icon={user} alt='user' text='Profile'/>
                 <Options icon={course} alt='user' text='Courses'/>
                 <Options icon={tick} alt='tick' text='Attendance'/>
