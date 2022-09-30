@@ -45,7 +45,9 @@ const SliderPage = () => {
                 </Link>
             </div>
         </div>
-        <div className='hero_tick_container'>
+        <div className='hero_tick_container'
+        // onClick={duplicates}
+        >
             <p className='hero_p'>
                 <img src={tick} alt='tick'></img>
             </p>

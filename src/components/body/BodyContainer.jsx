@@ -4,11 +4,11 @@ import './body.css'
 
 const BodyContainer = ({children}) => {
   return (
-    <section className='Hero'>
-        <div>
+    <section className='body'>
+        <div className='body_left'>
             <LeftBody />
         </div>
-        <div>
+        <div className='body_right'>
         {children}
         </div>
     </section>

@@ -1,10 +1,12 @@
-.Hero{
-    height: calc(100vh - 43px);
+.body{
+    /* height: calc(100vh - 43px); */
     display: flex;
-    margin-left: 13em;
+    margin-top: 2em;
     align-items: center;
+    justify-content: center;
     gap: 8em;
 }
+
 
 /* left side */
 .Hero_left{
@@ -183,7 +185,7 @@ a{
 }
 
 @media all and (max-width: 560px){
-    .Hero{
+    .body{
         flex-direction: column;
     }
 }

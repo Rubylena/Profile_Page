@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 0.2em;
+    gap: 2.5em;
 }
 
 .interest_slider_heading p:first-child{
@@ -17,7 +18,6 @@
     background: linear-gradient(90deg, #800165 0%, #D3014E 100%);
     /* Optional: Only If you want to center your slider in the page */
     margin: auto;
-    width: 15vw;
 }
 
 .slider-track{
