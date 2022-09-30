@@ -1,14 +1,13 @@
 import React from 'react'
 import './body.css'
-import LeftBody from './LeftBody'
+import BodyContainer from './BodyContainer'
 import RightBody from './RightBody'
 
 const Body = () => {
   return (
-    <section className='Hero'>
-        <LeftBody />
-        <RightBody />
-    </section>
+    <BodyContainer>
+      <RightBody />
+    </BodyContainer>
   )
 }
 

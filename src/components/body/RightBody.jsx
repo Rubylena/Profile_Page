@@ -36,9 +36,6 @@ const RightBody = ({name}) => {
                 <img src={tick} alt='tick'></img>
             </p>
         </div>
-        <div>
-            <button className='hero_right_btn'>Next Step &nbsp; &#8250;</button>
-        </div>
     </section>
   )
 }

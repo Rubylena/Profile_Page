@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import back from '../../../assets/img/back.svg'
 import YesNo from '../../yesNo/YesNo'
 import '../../body/body.css'
@@ -27,8 +28,11 @@ const ThirdOption = () => {
                 action={()=>setYesTwoOption(!yesTwoOption)}
                 />
                 {yesTwoOption && (<div className='yes2_selected'>
-                    <div className=''>
+                    <div >
                         <img src={back} alt='go back'  onClick={()=>setYesTwoOption(!yesTwoOption)}></img>
+                        <div>
+                            <Link to='/interests'><button className='hero_right_btn'>Next Step &nbsp; &#8250;</button></Link>
+                        </div>
                     </div>
                 </div>)}
 
@@ -37,8 +41,12 @@ const ThirdOption = () => {
                 name={` ${yesTwoOption && 'hide'} ${noTwoOption && ' hide'}`}
                 action={()=>setNoTwoOption(!noTwoOption)}
                 />
-                {noTwoOption && (<div className='no2_selected'>
+                {noTwoOption && (
+                <div className='no2_selected'>
                     <img src={back} alt='go back' onClick={()=>setNoTwoOption(!noTwoOption)}></img>
+                    <div>
+                        <Link to='/interests'><button className='hero_right_btn'>Next Step &nbsp; &#8250;</button></Link>
+                    </div>
                 </div>)}
                 <img src={back} alt='go back' className={`yesOption_img ${yesTwoOption && 'hide yes2_selected'} ${noTwoOption && 'hide'}`} onClick={()=>setYesOption(!yesOption)}></img>
             </div>
@@ -53,6 +61,9 @@ const ThirdOption = () => {
         {noOption && (
         <div className='no2_selected yesOption '>
             <img src={back} alt='go back' className='yesOption_1_img' onClick={()=>setNoOption(!noOption)}></img>
+            <div>
+                <Link to='/interests'><button className='hero_right_btn'>Next Step &nbsp; &#8250;</button></Link>
+            </div>
         </div>)}
     </div>
   )

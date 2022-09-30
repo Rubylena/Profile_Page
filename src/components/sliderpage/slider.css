@@ -1,0 +1,105 @@
+.interest_slider_heading{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.2em;
+}
+
+.interest_slider_heading p:first-child{
+    color: #ACB7EB;
+}
+
+.interest_slider_heading p:last-child{
+    color: #002851;
+}
+
+/* slider */
+.horizontal-slider{
+    background: linear-gradient(90deg, #800165 0%, #D3014E 100%);
+    /* Optional: Only If you want to center your slider in the page */
+    margin: auto;
+    width: 15vw;
+}
+
+.slider-track{
+    /* Top value to align your track to the center of your thumb */
+    top: 5px;
+    height: 10px;
+    border-radius:5px;
+    /* default color of your track */
+    background-color: #F1F3FD;
+}
+
+.slider-track.slider-track-0{
+    /* color of the track before the thumb */
+    background: linear-gradient(90deg, #800165 0%, #D3014E 100%);
+}
+
+.slider-thumb{
+    background: #FFFFFF;
+    width: 20px;
+    height: 20px;
+    border: rgba(204, 65, 116, 0.35) 4px solid;
+    border-radius: 100%;
+    text-align: center;
+    outline: none;
+}
+
+/* grouping the interests */
+.sliderpage{
+    display: flex;
+    justify-content: space-between;
+    /* gap: 20px; */
+    box-shadow: 0px 4px 29px #F0F3FF;
+    padding: 0.6em 0.8em 0 4em;
+    border-radius: 25px;
+
+}
+
+.sliderpage_left{
+    padding: 2em 3em 0 0;
+}
+
+.sliderpage_left > p{
+    margin-bottom: 2em;
+}
+
+.slides{
+    display: flex;
+    gap: 8em;
+}
+
+.slides_left{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.slides_right{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.warning{
+    color: #ACB7EB;
+    font-style: italic;
+    margin-top: 4em;
+}
+
+.interest_btn{
+    background: #066AEF;
+    border: none;
+    padding: 1em 2.5em;
+    color: #FFFFFF;
+    border-radius: 5px;
+    position: relative;
+    bottom: -23px;
+    left: 280px;
+}
+
+@media all and (max-width: 560px) {
+    .slides{
+        flex-direction: column;
+        gap: 2em;
+    }
+}

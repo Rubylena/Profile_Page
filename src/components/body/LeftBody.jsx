@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import photo from '../../assets/img/photo-min.jpg'
 import upload from '../../assets/img/upload.svg'
 import user from '../../assets/img/user.svg'
@@ -22,7 +23,7 @@ const LeftBody = () => {
             <h2>Grace Effiong</h2>
 
             <article  className='hero_left_article'>
-                <Options icon={user} alt='user' text='Profile'/>
+                <Link to='/' ><Options icon={user} alt='user' text='Profile'/></Link>
                 <Options icon={course} alt='user' text='Courses'/>
                 <Options icon={tick} alt='tick' text='Attendance'/>
             </article>
