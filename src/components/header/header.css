@@ -4,8 +4,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5em 0;
+    padding: 1em 5em;
 }
+
+/* nav{
+    width: 15%;
+} */
 
 .header_img{
     width: 100%;
@@ -16,6 +20,25 @@
 
 .header_p2{
     font-size: 0.7em;
+    color: white;
+}
+
+.link_profile{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.header_img_container{
+    width: 2em;
+    height: 2em;
+    border-radius: 100%;
+}
+
+.header_img2{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
 }
 
 @media all and (max-width: 560px) {

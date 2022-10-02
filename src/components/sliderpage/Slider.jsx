@@ -3,7 +3,6 @@ import ReactSlider from 'react-slider'
 import './slider.css'
 
 const Slider = ({text, value, onChange}) => {
-    // const [level, setLevel] = useState(0)
 
   return (
     <div className='interest_slider'>

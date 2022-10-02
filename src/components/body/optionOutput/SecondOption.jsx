@@ -18,6 +18,7 @@ const SecondOption = () => {
             <Input
             type='text'
             placeholder='Current Occupation'
+            display='none'
             />
             <img src={back} alt='go back' 
             className='yesOption_img' 
@@ -35,6 +36,7 @@ const SecondOption = () => {
             <Input
             type='text'
             placeholder='Current Occupation'
+            display='none'
             />
             <img src={back} alt='go back' className='yesOption_1_img' onClick={()=>setNoOption(!noOption)}></img>
         </div>)}

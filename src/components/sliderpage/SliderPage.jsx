@@ -16,8 +16,33 @@ const SliderPage = () => {
         'Writer' : 0
     })
 
+    // console.log(value)
+    // useEffect(() => {
+    //     setPoints(points)
+    // }, [points])
+    // console.log({points})
+    
+
     const handleChange = (name, value) =>{
         setPoints({...points, [name]: value})
+        // console.log(points)
+        const extractValues = Object.values(points)
+        // console.log(extractValues)
+        
+        const hasDuplicates = (arr) => arr.length !== new Set(extractValues).size;
+        // console.log(hasDuplicates(extractValues))
+        
+        const msg = document.getElementById("warn")
+        const done = document.getElementById("done")
+        if(hasDuplicates(extractValues)){
+            msg.classList.add("warning")
+            msg.classList.remove("hide")
+        } else{
+            msg.classList.add("hide")
+            msg.classList.remove("warning")
+            done.classList.add("interest_btn")
+            done.classList.remove("hide")
+        }
     }
 
   return (
@@ -38,15 +63,14 @@ const SliderPage = () => {
                     <Slider text='Writer' onChange={handleChange} value={points.Writer} />
                 </div>
             </div>
-            <p className='warning'>* You cannot pick a number twice</p>
+            <p id='warn' className='hide'>* You cannot pick a number twice</p>
             <div>
-                <Link to='/result' state={{data: points}} >
-                    <button className='interest_btn'>Done</button>
+                <Link to='/result'  state={{data: points}} >
+                    <button id='done' className='hide'>Done</button>
                 </Link>
             </div>
         </div>
-        <div className='hero_tick_container'
-        // onClick={duplicates}
+        <div className='sliderpage_right'
         >
             <p className='hero_p'>
                 <img src={tick} alt='tick'></img>

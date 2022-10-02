@@ -1,6 +1,6 @@
 import React from 'react'
 import LeftBody from './LeftBody'
-import './body.css'
+import './bodyContainer.css'
 
 const BodyContainer = ({children}) => {
   return (

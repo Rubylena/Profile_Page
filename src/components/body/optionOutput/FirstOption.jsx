@@ -19,10 +19,12 @@ const FirstOption = () => {
             <Input
             type='text'
             placeholder='Course of study'
+            display='none'
             />
             <Input
             type='text'
             placeholder='Expected Graduation date'
+            display='none'
             />
             <img src={back} alt='go back' className='yesOption_img' onClick={()=>setYesOption(!yesOption)}></img>
         </div>
@@ -37,10 +39,12 @@ const FirstOption = () => {
             <Input
                 type='text'
                 placeholder='Course of study'
+                dis='none'
                 />
             <Input
-            type='text'
-            placeholder='Expected Graduation date'
+                type='text'
+                placeholder='Expected Graduation date'
+                display='none'
             />
             <img src={back} alt='go back' className='yesOption_1_img' onClick={()=>setNoOption(!noOption)}></img>
 
