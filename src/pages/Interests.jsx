@@ -1,12 +1,16 @@
 import React from 'react'
 import BodyContainer from '../components/body/BodyContainer'
+import Header from '../components/header/Header'
 import SliderPage from '../components/sliderpage/SliderPage'
 
 const Interests = () => {
   return (
-    <BodyContainer>
-        <SliderPage />
-    </BodyContainer>
+    <div>
+      <Header />
+      <BodyContainer>
+          <SliderPage />
+      </BodyContainer>
+    </div>
   )
 }
 

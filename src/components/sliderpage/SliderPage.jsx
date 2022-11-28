@@ -16,21 +16,13 @@ const SliderPage = () => {
         'Writer' : 0
     })
 
-    // console.log(value)
-    // useEffect(() => {
-    //     setPoints(points)
-    // }, [points])
-    // console.log({points})
-    
-
-    const handleChange = (name, value) =>{
-        setPoints({...points, [name]: value})
-        // console.log(points)
+    const error =()=>{
+        console.log(points)
         const extractValues = Object.values(points)
-        // console.log(extractValues)
+        console.log(extractValues)
         
         const hasDuplicates = (arr) => arr.length !== new Set(extractValues).size;
-        // console.log(hasDuplicates(extractValues))
+        console.log(hasDuplicates(extractValues))
         
         const msg = document.getElementById("warn")
         const done = document.getElementById("done")
@@ -43,6 +35,11 @@ const SliderPage = () => {
             done.classList.add("interest_btn")
             done.classList.remove("hide")
         }
+    }
+
+    const handleChange = (name, value) =>{
+        setPoints({...points, [name]: value})
+        error()
     }
 
   return (

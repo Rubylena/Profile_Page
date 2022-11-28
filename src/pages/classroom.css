@@ -1,7 +1,7 @@
 .final_classroom{
     display: flex;
-    margin: 8em 0 0;
-    justify-content: space-evenly;
+    margin: 6em 8em 0;
+    gap: 8em;
 }
 
 .classroom_nav{
@@ -21,7 +21,8 @@
 
 .scrollbar{
     overflow-y: scroll;
-    height: 300px;
+    height: 420px;
+    border-radius: 17px;
 }
 
 .topics{
@@ -38,6 +39,7 @@
     flex-direction: column;
     gap: 1.5em;
     margin-top: -2.5em;
+    width: 50%;
 }
 
 .class_lefty a{
@@ -48,6 +50,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.5em;
+    width: 50%;
 }
 
 .inner_left{
@@ -62,6 +65,48 @@ hr{
     opacity: 0.1;
 }
 
+.active{
+    color: red;
+    background: #F1F3FD;
+    border-radius: 12px;
+}
+
+.student_img{
+    width: 2em;
+    height: 2em;
+    /* height: 2%; */
+    border-radius: 100%;
+}
+
+.inner_left_student{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6em;
+}
+
+.student_left{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.student_msg{
+    display: flex;
+    align-items: center;
+    border: 1px solid #ACB7EB;
+    color: #ACB7EB;
+    padding: 0.6em;
+    border-radius: 12px;
+    gap: 1em;
+    cursor: pointer;
+}
+
+.student_msg_active{
+    background: linear-gradient(180deg, #860164 0%, #CA0151 100%);
+    color: #FFFFFF;
+    cursor: pointer;
+}
 /* scroll bar */
 .scrollbar::-webkit-scrollbar{
     width: 8px;
@@ -77,10 +122,10 @@ hr{
     background: linear-gradient(90deg, #800165 0%, #D3014E 100%);
     border-radius: 5px;
 }
-.scrollbar::-webkit-scrollbar-button{
+/* .scrollbar::-webkit-scrollbar-button{
     background: linear-gradient(90deg, #800165 0%, #D3014E 100%);
     border-radius: 5px;
-}
+} */
 
 @media all and (max-width: 568px) {
     .final_classroom{
